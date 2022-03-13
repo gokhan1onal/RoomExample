@@ -11,30 +11,30 @@ import java.io.Serializable;
 public class Task implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
-    private int id;
+    public int id;
 
     @ColumnInfo(name = "task")
-    private String task;
+    public String task;
 
     @ColumnInfo(name = "desc")
-    private String desc;
+    public String desc;
 
     @ColumnInfo(name = "finish_by")
-    private String finishBy;
+    public String finishBy;
 
     @ColumnInfo(name = "finished")
-    private boolean finished;
+    public boolean finished;
 
 
     /*
      * Getters and Setters
      * */
 
-    public int getId() {
+    public int getFielId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setFielId(int id) {
         this.id = id;
     }
 
